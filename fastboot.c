@@ -417,12 +417,12 @@ int main(int argc, char **argv)
             char *pname = argv[1];
             char *fname = 0;
 			data = 0;
-            require(2);
-            if (argc > 2) {
-                fname = argv[2];
-                skip(3);
-            } else {
+            require(1);
+            if (argc > 1) {
+                fname = argv[1];
                 skip(2);
+            } else {
+                skip(1);
 			}
             if (fname > 0) {
             	data = load_file(fname, &sz);
