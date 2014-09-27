@@ -1,5 +1,5 @@
-This is a version of Android's "fastboot" tailored for the Kindle 4 and Kindle Touch. It will NOT work with Android phones, so don't even try.
+This is a version of Android's "fastboot" for the Kindle 4, Kindle Touch and Kindle PaperWhite. It will NOT work with Android phones.
 
-I need to learn how to write Makefiles, but until then, here's how to compile for OSX:
+To build the project on OS X, simply run
 
-$ gcc -Wall -lpthread -framework CoreFoundation -framework IOKit -framework Carbon protocol.c engine.c fastboot.c usb_osx.c util_osx.c -o fastboot
+    make
